@@ -2,7 +2,7 @@
 
 using namespace std;
 
-vector < int > rotateArray(vector < int > arr, int k) {
+vector <int> rotateArray(vector <int> arr, int k) {
     vector < int > rotateArr(arr.size());
     int rotateRem = k % arr.size();
     for (int i = 0; i < arr.size(); i++) {
@@ -21,13 +21,7 @@ vector < int > rotateArray(vector < int > arr, int k) {
 
 
 int main() {
-    vector < int > arr = {
-        1,
-        2,
-        3,
-        4,
-        5
-    };
+    vector < int > arr = {1,2,3,4,5};
     rotateArray(arr, 2);
 
 }
